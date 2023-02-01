@@ -5,8 +5,7 @@ import { Menu } from './components/menu/menu';
 import { Pets } from './components/pets/pets';
 
 import './index.scss';
-import { PETS } from './mocks/pet';
-
+import { PETS } from './mocks/pet-mock';
 
 export type MenuOption = {
   label: string;

@@ -1,4 +1,4 @@
-import { Pet, PetType } from "../models/pets";
+import { Pet, PetType } from '../models/Pet-model';
 
 export const PETS: PetType[] = [
   new Pet('Aliki', 'mixed race', 'Jimena'),

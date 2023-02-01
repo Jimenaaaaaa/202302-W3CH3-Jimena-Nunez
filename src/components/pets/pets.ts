@@ -1,4 +1,4 @@
-import { Pet, PetType } from '../../models/pets';
+import { Pet, PetType } from '../../models/Pet-model';
 import { Component } from '../component/component';
 
 export class Pets extends Component {
@@ -13,9 +13,10 @@ export class Pets extends Component {
       .map(
         (item) => `
         <li class="card">
-          <span>${item.isCompleted}</span>
-          <span title="${item.id}">${item.name}</span>
-          <span>${item.owner}</span>
+          <span>Name: ${item.name}</span>
+          <span>Breed: ${item.name}</span>
+          <span>Owner: ${item.owner}</span>
+          <span>Adopted: ${item.isAdopted}</span>
           <button>🗑️</button>
         </li>`
       )
@@ -25,3 +26,4 @@ export class Pets extends Component {
     `;
   }
 }
+
