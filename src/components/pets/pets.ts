@@ -1,5 +1,6 @@
 import { Pet, PetType } from '../../models/Pet-model';
 import { Component } from '../component/component';
+import './pets.scss';
 
 export class Pets extends Component {
   constructor(public selector: string, public pets: PetType[]) {
@@ -22,7 +23,7 @@ export class Pets extends Component {
       )
       .join('\n');
     return `
-    <section class="tasks"><ul>${items}</ul></section>
+    <section class="pets"><ul class="petlist">${items}</ul></section>
     `;
   }
 }

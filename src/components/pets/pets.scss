@@ -1,0 +1,17 @@
+.pets {
+}
+
+.petlist {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  li {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(178, 149, 110);
+    padding: 30px;
+    line-height: 40px;
+  }
+}
