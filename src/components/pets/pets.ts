@@ -12,13 +12,15 @@ export class Pets extends Component {
   private createTemplate() {
     const items = this.pets
       .map(
-        (item) => `
+        (item) =>
+          `
         <li class="card">
           <span>Name: ${item.name}</span>
           <span>Breed: ${item.name}</span>
           <span>Owner: ${item.owner}</span>
-          <span>Adopted: ${item.isAdopted}</span>
+          <span>Adopted: ${checkAdopted(item)}</span>
           <button>🗑️</button>
+          <button>Adopt!</button>
         </li>`
       )
       .join('\n');
@@ -28,3 +30,13 @@ export class Pets extends Component {
   }
 }
 
+function checkAdopted(item: PetType) {
+  let adopted: string;
+  if (item.isAdopted === true) {
+    adopted = 'yes';
+    return adopted;
+  }
+
+  adopted = 'no';
+  return adopted;
+}

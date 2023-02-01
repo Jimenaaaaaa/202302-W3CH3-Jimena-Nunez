@@ -1,5 +1,6 @@
 /* eslint-disable no-new */
 import { Footer } from './components/footer/footer';
+import { Form } from './components/form/form';
 import { Header } from './components/header/header';
 import { Menu } from './components/menu/menu';
 import { Pets } from './components/pets/pets';
@@ -23,3 +24,4 @@ new Header('#root');
 new Menu('.header', menuOptions);
 new Pets('main', PETS);
 new Footer('#root');
+new Form('main');
